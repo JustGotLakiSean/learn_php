@@ -13,7 +13,29 @@
 // echo "Middle name: $mname <br>";
 // echo "Last name: $lname";
 
-# Operators #
+# Variable Scope #
+
+// LOCAL SCOPE //
+// function sayHi()
+// {
+//   $name = "Josh"; // local variable
+//   echo "Hi, $name<br>";
+// }
+
+// sayHi();
+// echo $name;
+
+// GLOBAL SCOPE //
+// $name = "mono"; // GLOBAL VARIABLE
+// function sayHi()
+// {
+//   global $name; // Accessing the global variable "$name"
+//   echo "Hi, $name";
+// }
+
+// sayHi();
+
+# Arithmetic perators #
 
 // $num1 = 10;
 // $num2 = 3;
