@@ -189,7 +189,8 @@
 /* ########## Control Flow ########## */
 /* if statement */
 
-$is_admin = true;
+$user = null;
+$is_admin = false;
 $can_edit = false;
 $btn_type = 'button';
 // if($is_admin) {
@@ -209,4 +210,72 @@ $btn_type = 'button';
 //     echo "<input type='$btn_type' value='Edit'/>";
 //   }
 // }
+
+/* if-else statement */
+// $user = 'Not Josh';
+// if($user === 'Josh'){
+//   $is_admin = true;
+//   echo "<p>Hello <strong>Admin</strong</p><br>";
+// } else {
+//   echo "<p>Unknown user.</p>";
+// }
+
+/* if-elseif */
+// $user = "Mono";
+// if($user === 'Josh'){
+//   $is_admin = true;
+//   echo "<p>Hello <strong>Admin Josh</strong</p><br>";
+// } else if($user === 'Mono') {
+//   $is_admin = true;
+//   echo "<p>Hello <strong>Admin Mono</strong</p><br>";
+// }
+
+/* Ternary Operator */
+$user = "Josh";
+// $admin_message = ($user === "Josh") ? "Hello, admin $user" : "Unknown User";
+// echo $admin_message;
+// $gender = 'm'; // 'm' or 'f'
+// $rev_gender = $gender === 'm' ? "Male" : "Female";
+// echo $rev_gender; // output: Male
+// $admin = "Hello $user" ?: "No user";
+// echo $admin;
+
+/* Switch statement */
+// $grade = 70;
+// echo "Grade: $grade <br>";
+// switch ($grade):
+//   case 75:
+//   case 80:
+//     echo "<strong>Good!</strong>";
+//     break;
+//   case 85:
+//   case 90:
+//     echo "<strong>Better!</strong>";
+//     break;
+//   case 95:
+//   case 100;
+//     echo "<strong>Best!<strong>";
+//     break;
+//   default:
+//     echo "<i style='color: red;'>Better luck next time!</i>";
+//     break;
+
+// endswitch;
+
+/* for loop */
+$counter = 0;
+$initialize = 1;
+$init_condition = 15;
+
+echo "Initialize value: $initialize <br>";
+echo "Condition: $init_condition <br>";
+// for($i = $initialize; $i <= $init_condition; $i++){
+//   $counter += $i;
+// }
+// echo $counter . '<br>';
+
+// for($i = $initialize; $i <= $init_condition; $i++):
+//   echo $i . '<br>';
+//   break;
+// endfor;
 ?>
