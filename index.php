@@ -1,5 +1,5 @@
-
 <?php
+// declare(strict_types=1);
 # Mono Crisostomo Ibarra #
 
 # Variables #
@@ -189,10 +189,10 @@
 /* ########## Control Flow ########## */
 /* if statement */
 
-$user = null;
-$is_admin = false;
-$can_edit = false;
-$btn_type = 'button';
+// $user = null;
+// $is_admin = false;
+// $can_edit = false;
+// $btn_type = 'button';
 // if($is_admin) {
 //   echo "Your are an admin.";
 //   $can_edit = true;
@@ -231,7 +231,7 @@ $btn_type = 'button';
 // }
 
 /* Ternary Operator */
-$user = "Josh";
+// $user = "Josh";
 // $admin_message = ($user === "Josh") ? "Hello, admin $user" : "Unknown User";
 // echo $admin_message;
 // $gender = 'm'; // 'm' or 'f'
@@ -263,12 +263,12 @@ $user = "Josh";
 // endswitch;
 
 /* for loop */
-$counter = 0;
-$initialize = 1;
-$init_condition = 15;
+// $counter = 0;
+// $initialize = 1;
+// $init_condition = 15;
 
-echo "Initialize value: $initialize <br>";
-echo "Condition: $init_condition <br>";
+// echo "Initialize value: $initialize <br>";
+// echo "Condition: $init_condition <br>";
 // for($i = $initialize; $i <= $init_condition; $i++){
 //   $counter += $i;
 // }
@@ -278,4 +278,143 @@ echo "Condition: $init_condition <br>";
 //   echo $i . '<br>';
 //   break;
 // endfor;
+
+// function is_greater(int $a, int $b) : bool
+// {
+//   return $a > $b;
+// }
+
+// echo is_greater(10, 4) ? "True" : "False";
+
+// for($i = 1; ; $i++):
+//   if($i > 10){
+//     break;
+//   }
+//   echo $i; // output: 12345678910
+// endfor;
+
+/* while loop */
+// function is_valid_age(int $age, int $valid_age = 18) : bool
+// {
+//   return $age >= $valid_age;
+// }
+
+// $age = 20;
+// $is_adult = false;
+// echo "<p>Your Age: $age</p>";
+
+// if(is_valid_age($age)){
+//   $is_adult = true;
+//   while($is_adult){
+//     echo "You are an adult";
+//     break;
+//   }
+// } else {
+//   echo "You are not an adult";
+// }
+
+/* do-while */
+// $i = 0;
+// do {
+//   echo $i++;
+// } while ($i <= 10);
+
+/* FUNCTIONS */
+/* User Defined Function */
+// function sayHi() : string
+// {
+//   return "Hi!";
+// }
+// echo sayHi(); // output: Hi!
+
+// Coercive Function Mode (default) //
+// function add_numbers(int $num1, int $num2) : int
+// {
+//   return $num1 + $num2;
+// }
+// echo add_numbers('2', 2); // output: 4;
+// php automatically converts string into int as needed as PHP is a loosely-typed language.
+
+// String Function Mode //
+// declare(strict_types = 1); at the very beginning //
+// function divide_two_numbers(int $num1, int $num2): int
+// {
+//   return $num1 / $num2;
+// }
+// // echo divide_two_numbers('3', 3); // output: Uncaught TypeError
+// echo divide_two_numbers(3, 3); // output: 1
+
+// function display_full_name(string $first_name, string $last_name): string
+// {
+//   return "$first_name $last_name";
+// }
+// echo display_full_name("Josh", "Mono"); // Josh Mono
+
+// Null Coalescing Operator //
+// $input_name = null;
+// $name = $input_name ?? 'No Name Given.';
+// echo $name;
+
+// Trailing comma //
+// function display_user_info(
+//   string $first_name,
+//   string $middle_name,
+//   string $last_name,
+//   int $age
+// ) {
+//   return "$first_name $middle_name $last_name, $age";
+// }
+
+// echo display_user_info(ucfirst("Josh"), ucfirst("Mono"), ucfirst("ibarra"), 20);
+
+// Pass-by-reference //
+// function addFive(int &$num): void
+// {
+//   $num += 5;
+// }
+
+// $number = 10;
+// echo "<p>Previous Value of Number: $number</p>";
+// addFive($number);
+// echo "<p>Update value of Number after pass by reference: $number</p>";
+
+// Pass by value //
+// function addFive(int $num): int
+// {
+//   $num += 5;
+//   return $num;
+// }
+// $number = 10;
+// echo addFive($number);
+// echo "<p>$number</p>";
+
+// Default Argumnent //
+// function display_names(string $first_name, string $middle_name, string $last_name): string
+// {
+//   return "First name: $first_name, Middle name: $middle_name, Lastname: $last_name";
+// }
+
+// $fname = "Josh";
+// $mname = null;
+// $lname = "Mono";
+
+// echo display_names($fname, is_null($mname) ? "y" : $mname, $lname); // output: First name: Josh, Middle name: y, Lastname: Mono
+
+// Default Parameters //
+// function display_grade($first_sem, $second_sem, $third_sem = "No Grade Yet"): string
+// {
+//   return "First sem: $first_sem, Sec sem: $second_sem, Third sem: $third_sem";
+// }
+// echo display_grade("80", "90"); // output: First sem: 80, Sec sem: 90, Third sem: No Grade Yet
+
+
+// function display_user_info(...$info)
+// {
+//   foreach($info as $i){
+//     $all = $i;
+//     return $all;
+//   }
+// }
+
+// echo display_user_info("Josh", "Mono", 20, 9384733);
 ?>
