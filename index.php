@@ -1,5 +1,7 @@
 <?php
 // declare(strict_types=1);
+
+// PHP Version: 7.2.6 //
 # Mono Crisostomo Ibarra #
 
 # Variables #
@@ -407,14 +409,60 @@
 // }
 // echo display_grade("80", "90"); // output: First sem: 80, Sec sem: 90, Third sem: No Grade Yet
 
-
-// function display_user_info(...$info)
+// Variable-length argument lists //
+// function display_user_info(...$arr_info)
 // {
-//   foreach($info as $i){
-//     $all = $i;
-//     return $all;
-//   }
+//   return print_r($arr_info);
 // }
 
-// echo display_user_info("Josh", "Mono", 20, 9384733);
+// echo display_user_info("Josh", "Mono", 20);
+
+// Foreach //
+
+// $loan_5k_account = array(
+//   $civilian_borrower = array('Bill', 'Josh'),
+//   $officer_borrower = array('Steve', 'Mono')
+// );
+
+// $top_artist = [
+//   '1' => 'Me',
+//   '2' => 'You',
+// ];
+
+// foreach($top_artist as $top => $artist)
+// {
+//   echo "<p>Top $top: $artist</p>";
+// }
+
+// Variable Function //
+// function get_sum(int $num1, int $num2): int
+// {
+//   return $num1 + $num2;
+// }
+
+// $add = 'get_sum';
+// echo $add(3, 4);
+
+// Anonymous function (Closures) //
+// $authenticated = true;
+// $success_message = function($is_authenticated) {
+//   return ($is_authenticated) ? "Hello" : "Not Authenticated";
+// };
+
+// echo $success_message($authenticated);
+
+// Inheret the $first_name variable using //
+// the "use" language construct //
+// $first_name = "Mono";
+// $display_name = function() use ($first_name): string {
+//   return $first_name;
+// };
+
+// echo $display_name();
+
+// ARROW FUNCTION: PHP 7.4 and up //
+// $message = fn() => "Hello World";
+// echo $message();
+
+
 ?>
