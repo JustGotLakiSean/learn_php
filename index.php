@@ -463,6 +463,8 @@
 // ARROW FUNCTION: PHP 7.4 and up //
 // $message = fn() => "Hello World";
 // echo $message();
-
-
+// $display_name = fn($name): string => "My name is $name";
+// echo $display_name("Josh");
+// $get_sum = fn(int $num1, int $num2): int => ($num1 + $num2);
+// echo $get_sum(3, 5);
 ?>
