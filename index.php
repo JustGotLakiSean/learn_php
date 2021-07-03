@@ -467,4 +467,8 @@
 // echo $display_name("Josh");
 // $get_sum = fn(int $num1, int $num2): int => ($num1 + $num2);
 // echo $get_sum(3, 5);
+
+// $a = 5;
+// echo ++$a . "<br>";
+// echo $a++;
 ?>

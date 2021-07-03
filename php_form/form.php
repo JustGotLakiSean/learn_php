@@ -1,12 +1,20 @@
 <?php
 
-if(isset($_GET['submit']))
-{
-  if(isset($_GET['first_name']) && isset($_GET['last_name']))
-  {
-    echo $_GET['first_name'] . $_GET['last_name'];
-  }
-}
+// if(isset($_GET['submit']))
+// {
+//   if(isset($_GET['first_name']) && isset($_GET['last_name']))
+//   {
+//     echo $_GET['first_name'] . $_GET['last_name'];
+//   }
+// }
+
+// if(isset($_POST['submit']))
+// {
+//   if(isset($_POST['first_name']) && isset($_POST['last_name']))
+//   {
+//     echo $_POST['first_name'] . $_POST['last_name'];
+//   }
+// }
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +28,7 @@ if(isset($_GET['submit']))
 <body>
   <main>
     <section>
-      <form action="" method="GET">
+      <form action="" method="POST">
         <label for="first_name">Enter first name:</label>
         <input type="text" name="first_name" id="first_name" />
         <label for="last_name">Enter last name:</label>
