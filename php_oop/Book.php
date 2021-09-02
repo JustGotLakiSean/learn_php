@@ -12,9 +12,9 @@ class Book // Book class
     private $title,
     private $author
   ) {
-    // use $this (Book) to access the
+    // use $this (instanced object of Book) to access the
     // private properties of the Book class
-
+    // $this is a referrence to the object 
     $this->title = $title;
     $this->author = $author;
   }

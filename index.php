@@ -179,6 +179,9 @@
 // echo ucwords($word_count);
 // echo strip_tags($sample_script, 'a'); // output: Test
 
+// $mess = "MonoIbarra";
+// echo substr($mess, -5, 3); // output: 'bar'
+
 // Concatinate Assignment Operator ".=" //
 // $fname = "Josh";
 // $lname = "Mono";
@@ -471,4 +474,21 @@
 // $a = 5;
 // echo ++$a . "<br>";
 // echo $a++;
+
+// match
+// $my_name = 'Josh';
+// $name = match($my_name) {
+//   "Josh" => 'HELLO Josh',
+//   "Mono" => 'HELlo Mono',
+//   default => 'Unknown User',
+// };
+// echo $name;
+
+// CONSTANT VARIABLE
+// define('NUMBER', 10e4);
+// echo gettype(NUMBER); // double
+// const ZIPCODE = 1700;
+// echo ZIPCODE;
+
+
 ?>
